@@ -221,6 +221,69 @@
     max-width:420px;
   }
 
+  /* ---------- PREVIEW TACTO ---------- */
+  .tacto-preview{
+    background:linear-gradient(180deg, #06233F 0%, #0a3460 100%);
+    padding:80px 0;
+  }
+  .tacto-preview-head{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 56px;
+  }
+  .tacto-preview-head .label{display:block;}
+  .tacto-preview-head h2{
+    color:var(--blanco);
+    font-size:clamp(26px,3.6vw,40px);
+    margin-bottom:14px;
+  }
+  .tacto-preview-head .subtitle{
+    color:#c9d2db;
+    font-style:italic;
+    font-size:16px;
+  }
+  .tacto-preview-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+  }
+  .tacto-preview-col{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+  .tacto-badge{
+    display:inline-block;
+    background:rgba(204,135,54,0.14);
+    color:var(--oro);
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    padding:6px 14px;
+    border-radius:20px;
+    margin-bottom:18px;
+  }
+  .tacto-preview-img{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.4);
+    border:1px solid rgba(204,135,54,0.3);
+    transition:transform 0.3s ease;
+  }
+  .tacto-preview-img:hover{
+    transform:scale(1.02);
+  }
+  .tacto-preview-caption{
+    color:var(--blanco);
+    font-size:14px;
+    margin:20px 0 24px;
+  }
+  @media (max-width:768px){
+    .tacto-preview-grid{grid-template-columns:1fr;}
+  }
+
   /* ---------- PROBLEMA ---------- */
   .problema{background:var(--blanco);text-align:center;}
   .problema .label{text-align:center;display:block;}
@@ -685,6 +748,31 @@
       <a href="#contacto" class="btn btn-outline-white">Hablemos</a>
     </div>
     <p class="hero-footer-text">Somos personas innovando para servir a personas.</p>
+  </div>
+</section>
+
+<!-- ============ PREVIEW TACTO ============ -->
+<section class="tacto-preview">
+  <div class="container fade-in">
+    <div class="tacto-preview-head">
+      <span class="label">Lo que ves cuando entras a TACTO</span>
+      <h2>Un sistema completo. No un curso más.</h2>
+      <p class="subtitle">Esto es lo que ve un doctor que ya trabaja con el método TACTO.</p>
+    </div>
+    <div class="tacto-preview-grid">
+      <div class="tacto-preview-col">
+        <span class="tacto-badge">TACTO Score™ — Diagnóstico</span>
+        <img src="assets/tacto-score-preview.png" alt="Vista previa de TACTO Score" class="tacto-preview-img">
+        <p class="tacto-preview-caption">Descubre exactamente dónde está tu mayor fuga de ingresos.</p>
+        <a href="https://tacto-score.netlify.app" target="_blank" rel="noopener" class="btn btn-gold">Hacer mi diagnóstico gratis →</a>
+      </div>
+      <div class="tacto-preview-col">
+        <span class="tacto-badge">TACTO Growth System™ — Plataforma</span>
+        <img src="assets/tacto-growth-preview.png" alt="Vista previa de TACTO Growth System" class="tacto-preview-img">
+        <p class="tacto-preview-caption">Todo lo que necesitas para crecer con alineadores en un solo lugar.</p>
+        <a href="https://tacto-growth.netlify.app" target="_blank" rel="noopener" class="btn btn-outline-white">Ver demo TACTO Growth System →</a>
+      </div>
+    </div>
   </div>
 </section>
 
